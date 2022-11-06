@@ -5,14 +5,9 @@ const ItemList = (props) => {
   return (
     <div className="item-list_container">
       <ul>
-        <li>
-          <Item />
-        </li>
-        <li>
-          <Item />
-        </li>
-        <li>{props.firstItem}</li>
-        <li>{props.secondItem}</li>
+        {props.items.map((item) => (
+          <li key={item.id}><Item text={item.text} /></li>
+        ))}
       </ul>
     </div>
   );

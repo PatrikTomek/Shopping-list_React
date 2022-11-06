@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddItem = () => {
+const AddItem = (props) => {
   const [input, setInput] = useState("");
 
   const handleInput = (e) => {
@@ -9,7 +9,7 @@ const AddItem = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(input)
+    props.onHandleAddItem(input);
     setInput("");
   };
 

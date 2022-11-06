@@ -7,7 +7,7 @@ function App() {
     <div className="app_container">
       <h1>Shopping List</h1>
       <AddItem />
-      <ItemList />
+      <ItemList firstItem="Bread" secondItem="Soy milk" />
     </div>
   );
 }

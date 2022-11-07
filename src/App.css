@@ -1,7 +1,26 @@
+:root {
+  --main: #000000;
+  --secondary: #14264e;
+  --third: #fb565a;
+  --fourth: #eb4d50;
+  --fifth: #f2f2f2;
+  --font: black;
+}
+
 body {
-  background-color: gray;
+  font-family: "Sriracha", cursive;
+  height: 700px;
+  background-image: linear-gradient(45deg, var(--main), var(--secondary), var(--main));
+  ;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
+  color: var(--font);
+}
+
+button {
+  cursor: pointer;
 }
 
 .app_container,
@@ -15,43 +34,94 @@ body {
   width: 400px;
   height: auto;
   min-height: 500px;
-  border: 2px solid black;
+  margin-top: 50px;
+  border-radius: 15px;
+  background-image: linear-gradient(45deg, rgb(226, 226, 226), white);
+}
+
+.main_header {
+  text-transform: uppercase;
+  margin-top: 50px;
 }
 
 .add-item_container {
-  border: 1px solid purple;
-  width: 300px;
-  height: 110px;
+  margin-top: 20px;
+}
+.add_form {
+  display: flex;
+  border-radius: 15px;
+}
+.add_input,
+.add_btn {
+  border: none;
+}
+.add_input {
+  width: 245px;
+  height: 30px;
+  padding-left: 10px;
+  background-color: var(--fifth);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.add_btn {
+  width: 35px;
+  padding-right: 8px;
+  font-size: 20px;
+  background-image: linear-gradient(45deg, var(--third), var(--fourth));
+  color: var(--fifth);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.add_btn:hover {
+  opacity: 0.8;
 }
 
 .item-list_container {
-  border: 1px solid red;
-  width: 300px;
+  width: 290px;
   height: auto;
+  margin-top: 20px;
 }
 .item-list_container ul {
   list-style-type: none;
 }
 
 .item {
-  border: 1px solid yellow;
-  width: 200px;
+  background-color: var(--fifth);
+  width: 267px;
   height: 30px;
   margin: 5px 0px;
+  margin-left: -40px;
   padding-left: 20px;
   display: flex;
   align-items: center;
+  border-radius: 30px;
 }
 .item:hover {
   cursor: pointer;
-  opacity: .5;
+  opacity: 0.9;
 }
 .checked-item {
-  opacity: .6;
+  opacity: 0.6;
   text-decoration: line-through;
 }
 .delete-item_btn {
+  height: 20px;
+  width: 20px;
   position: absolute;
-  margin-left: 165px;
+  margin-left: 235px;
   float: right;
+  border: none;
+  background-color: transparent;
+  background-image: url("./img/trash.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+.delete-item_btn:hover {
+  opacity: 1;
+}
+
+.app_container, .item, .add_form {
+  box-shadow: 0px 5px 5px 5px hsla(240, 4%, 11%, 0.184);
 }

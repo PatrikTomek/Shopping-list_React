@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="app_container">
-      <h1>Shopping List</h1>
+      <h1 className="main_header">Shopping List</h1>
       <AddItem onHandleAddItem={handleAddItem} />
       <ItemList items={itemList} />
     </div>

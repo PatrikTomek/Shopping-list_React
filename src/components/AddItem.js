@@ -15,7 +15,6 @@ const AddItem = (props) => {
 
   return (
     <div className="add-item_container">
-      <h3>Add Item</h3>
       <form className="add_form" onSubmit={handleSubmit}>
         <input
           className="add_input"
@@ -24,7 +23,7 @@ const AddItem = (props) => {
           value={input}
           onChange={handleInput}
         />
-        <button className="add_btn">Add</button>
+        <button className="add_btn">+</button>
       </form>
     </div>
   );

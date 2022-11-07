@@ -50,3 +50,8 @@ body {
   opacity: .6;
   text-decoration: line-through;
 }
+.delete-item_btn {
+  position: absolute;
+  margin-left: 165px;
+  float: right;
+}

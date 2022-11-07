@@ -7,7 +7,6 @@ function App() {
   const [itemList, setItemList] = useState([]);
 
   const handleAddItem = (itemText) => {
-    console.log(itemText);
     setItemList((prevItemList) => {
       return [
         ...prevItemList,

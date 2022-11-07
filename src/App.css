@@ -42,3 +42,11 @@ body {
   display: flex;
   align-items: center;
 }
+.item:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+.checked-item {
+  opacity: .6;
+  text-decoration: line-through;
+}

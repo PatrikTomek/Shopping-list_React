@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const Item = (props) => {
-  return (
-    <div className='item'>{props.text}</div>
-  )
-}
+  const handleIsChecked = (e) => {
+    e.currentTarget.classList.toggle("checked-item");
+  };
 
-export default Item
+  return (
+    <div className="item" onClick={handleIsChecked}>
+      {props.text}
+    </div>
+  );
+};
+
+export default Item;

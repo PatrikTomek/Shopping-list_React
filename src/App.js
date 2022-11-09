@@ -16,10 +16,15 @@ function App() {
   };
 
   return (
-    <div className="app_container">
-      <h1 className="main_header">Shopping List</h1>
-      <AddItem onHandleAddItem={handleAddItem} />
-      <ItemList items={itemList} />
+    <div>
+      <div className="app_container">
+        <h1 className="main_header">Shopping List</h1>
+        <AddItem onHandleAddItem={handleAddItem} />
+        <ItemList items={itemList} />
+      </div>
+      <p className="sign_footer">
+        Coded by <a href="https://patriktomek.cz/">Patrik Tomek</a>
+      </p>
     </div>
   );
 }

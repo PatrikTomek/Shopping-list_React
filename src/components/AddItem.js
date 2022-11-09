@@ -9,8 +9,10 @@ const AddItem = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.onHandleAddItem(input);
-    setInput("");
+    if (input.length > 0) {
+      props.onHandleAddItem(input);
+      setInput("");
+    }
   };
 
   return (
